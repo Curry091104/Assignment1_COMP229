@@ -1,0 +1,19 @@
+<%- include ('partials/header.ejs') %>
+<%- include ('partials/main_nav.ejs') %>
+
+<div class="container">
+    <div class = "aboutme-content">
+        <h2>About Me</h2>
+        <img src="/img/mypic.jpg" alt="Tuong Nguyen Pham" style="width:450px; height: 300px;">
+        <div class = "info">
+            <p style = "font-size: 28px;"><%= name %></p>
+            <p style = "font-size: 14px;">I am currently a second-year student at Centennial College School of Engineering and Applied Science
+                studying Software Engineering Technology.<br><br>I am passionate about programming and I am always eager to learn new things.
+                <br><br>I am a hard-working person and I always try my best to achieve my goals.
+            </p>
+        </div>
+        <a href="assets/resume.pdf" target="_blank"><button class="resume-btn">View my resume</button></a>
+    </div>
+</div>
+
+<%- include ('partials/footer.ejs') %>

@@ -1,0 +1,43 @@
+<%- include ('partials/header.ejs') %>
+<%- include ('partials/main_nav.ejs') %>
+
+<div class = "container">
+    <div class = "contact-headline">
+        <h2>CONTACT US</h2>
+    </div>
+    <div class="contact-content">
+        <div class = "mycontact">
+            <p style="font-weight: bold; font-size: 20px;">CONTACT DETAILS</p>
+            <p><i class="fa-solid fa-location-dot"></i>  Address: <%=address%></p>
+            <p><i class="fa-solid fa-phone"></i>  Phone: <%=phone%></p>
+            <p><i class="fa-regular fa-envelope"></i>  Email: <%=email%></p>
+            <div class ="contact-icons">
+                <a href = "#"><i class="fab fa-facebook fa-2x"></i></a>
+                <a href = "#"><i class="fa-brands fa-instagram fa-2x"></i></a>
+                <a href = "#"><i class="fa-brands fa-whatsapp fa-2x"></i></a>
+            </div>
+        </div>
+        <div class="customer-message">
+            <p style="font-weight: bold; font-size: 20px; text-align: center;">SEND MESSAGE</p>
+            <form action="/home" method="get">
+                <label for="firstName">First Name:</label>
+                <input type="text" id="firstName" name="firstName" required>
+    
+                <label for="lastName">Last Name:</label>
+                <input type="text" id="lastName" name="lastName" required>
+    
+                <label for="contactNumber">Contact Number:</label>
+                <input type="tel" id="contactNumber" name="contactNumber" required>
+    
+                <label for="email">Email Address:</label>
+                <input type="email" id="email" name="email">
+    
+                <label for="message">Message:</label>
+                <textarea id="message" name="message" rows="5" required></textarea>
+    
+                <input type="submit" value="Submit">
+            </form>
+        </div>
+    </div>
+</div>
+<%- include ('partials/footer.ejs') %>
